@@ -28,7 +28,7 @@ public class testCots {
 
 	@GetMapping("/req")
 	public String Request() {
-		String keyVaultName = "realt-time-location-secure-creds";
+		String keyVaultName = "keyVaultsForSecureCreds";
 		String keyVaultUri = "https://" + keyVaultName + ".vault.azure.net";
 
 		SecretClient secretClient = new SecretClientBuilder()
@@ -45,7 +45,7 @@ public class testCots {
 	
 	@GetMapping("/reqGet")
 	public String RequestGet() {
-		String keyVaultName = "realt-time-location-secure-creds";
+		String keyVaultName = "keyVaultsForSecureCreds";
 		String keyVaultUri = "https://" + keyVaultName + ".vault.azure.net";
 
 		SecretClient secretClient = new SecretClientBuilder()
@@ -62,7 +62,7 @@ public class testCots {
 	public String RequestGet(
 			@RequestParam(value = "name",defaultValue = "defValue")String name) {
 		
-		String keyVaultName = "realt-time-location-secure-creds";
+		String keyVaultName = "keyVaultsForSecureCreds";
 		
 		String keyVaultUri = "https://" + keyVaultName + ".vault.azure.net";
 

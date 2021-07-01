@@ -12,7 +12,7 @@ public class testAzureKeyValult {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		String keyVaultName = "realt-time-location-secure-creds";
+		String keyVaultName = "keyVaultsForSecureCreds";
 		String keyVaultUri = "https://" + keyVaultName + ".vault.azure.net";
 
 		SecretClient secretClient = new SecretClientBuilder()
